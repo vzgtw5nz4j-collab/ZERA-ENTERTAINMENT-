@@ -1,0 +1,41 @@
+/* Simple responsive styles for ZERA ENTERTAINMENT */
+:root{
+  --maxw:1100px;
+  --accent:#111;
+  --muted:#666;
+  --card:#f7f7f7;
+  --accent-color:#1565d8;
+  --gap:18px;
+}
+*{box-sizing:border-box}
+body{font-family:Inter,system-ui,Arial,Helvetica,sans-serif;margin:0;color:var(--accent);line-height:1.5;background:#fff}
+.wrap{max-width:var(--maxw);margin:0 auto;padding:20px}
+.header-inner{display:flex;align-items:center;justify-content:space-between;gap:12px}
+.site-header{border-bottom:1px solid #eee;background:#fff;position:sticky;top:0;z-index:30}
+.site-title{font-size:26px;margin:10px 0}
+.logo{height:56px;width:auto;margin-right:10px}
+.logo-link{display:inline-flex;align-items:center}
+.nav-toggle{display:none;background:transparent;border:0;font-size:22px}
+.main-nav{display:flex;gap:14px;align-items:center}
+.main-nav a{color:var(--accent);text-decoration:none;font-weight:600;padding:8px;border-radius:6px}
+.main-nav a[aria-current="page"]{background:#f0f0f0}
+.hero{padding:24px 0}
+.hero h2{font-size:22px;margin:6px 0}
+.btn{display:inline-block;background:var(--accent-color);color:#fff;padding:10px 14px;border-radius:8px;text-decoration:none;font-weight:700}
+.section{margin-top:18px}
+.cards{display:flex;gap:12px;flex-wrap:wrap}
+.card{background:var(--card);padding:14px;border-radius:8px;flex:1 1 240px;min-width:180px}
+.site-footer{border-top:1px solid #eee;margin-top:30px;padding:18px 0;color:var(--muted);font-size:14px}
+.more a{color:var(--accent-color)}
+@media (max-width:840px){
+  .logo{height:48px}
+}
+@media (max-width:640px){
+  .site-title{font-size:20px}
+  .main-nav{gap:8px;flex-wrap:wrap}
+  .wrap{padding:14px}
+  .header-inner{flex-direction:column;align-items:flex-start}
+  .nav-toggle{display:inline-block}
+  .main-nav{display:none;width:100%;flex-direction:column}
+  .main-nav.show{display:flex}
+}

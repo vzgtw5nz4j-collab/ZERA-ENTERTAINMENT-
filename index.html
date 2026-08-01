@@ -1,1 +1,74 @@
-<!doctype html> <html lang="en"> <head> <meta charset="utf-8" /> <meta name="viewport" content="width=device-width,initial-scale=1" /> <title>ZERA ENTERTAINMENT — K-pop agency</title> <meta name="description" content="ZERA ENTERTAINMENT — official site. Talent, news, contact." /> <style> body{font-family:Arial,Helvetica,sans-serif;line-height:1.4;padding:20px;max-width:800px;margin:auto} header{border-bottom:1px solid #ddd;padding-bottom:10px;margin-bottom:12px} h1{font-size:28px;margin:0} .hero{background:#f8f8f8;padding:12px;border-radius:6px} .contact{margin-top:18px} footer{margin-top:30px;color:#666;font-size:14px} a{color:#1a73e8} </style> </head> <body> <header> <h1>ZERA ENTERTAINMENT</h1> <p>K‑pop agency — management, training, and news.</p> </header> <section class="hero"> <h2>About</h2> <p>We are ZERA ENTERTAINMENT. We train artists and share music and news here.</p> </section> <section class="contact"> <h2>Contact</h2> <p>Email: <a href="mailto:contact@zeraent.com">contact@zeraent.com</a></p> <p>Note: phone number not shown</p> </section> <footer> <p>© ZERA ENTERTAINMENT</p> </footer> </body> </html>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>ZERA ENTERTAINMENT</title>
+  <meta name="description" content="ZERA ENTERTAINMENT — K-pop artist management, training, and news." />
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <div class="brand">
+        <a href="index.html" class="logo-link">
+          <img src="assets/logo.svg" alt="ZERA ENTERTAINMENT logo" class="logo">
+        </a>
+        <h1 class="site-title">ZERA ENTERTAINMENT</h1>
+      </div>
+      <button id="navToggle" class="nav-toggle" aria-expanded="false" aria-controls="mainNav">☰</button>
+      <nav id="mainNav" class="main-nav" aria-label="Main navigation">
+        <a href="index.html" aria-current="page">Home</a>
+        <a href="about.html">About</a>
+        <a href="artists.html">Artists</a>
+        <a href="news.html">News</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="hero">
+      <h2>K‑pop agency — management, training, and news</h2>
+      <p>We develop artists with world‑class training, production, and global promotion.</p>
+      <p class="cta"><a class="btn" href="contact.html">Business & Auditions</a></p>
+    </section>
+
+    <section class="section roster-preview">
+      <h3>Featured Artists</h3>
+      <div class="cards">
+        <article class="card">
+          <h4>Artist A</h4>
+          <p>Lead vocalist, pop / R&amp;B.</p>
+        </article>
+        <article class="card">
+          <h4>Artist B</h4>
+          <p>Dance captain, performer.</p>
+        </article>
+        <article class="card">
+          <h4>Trainee C</h4>
+          <p>Debut candidate — vocals &amp; dance.</p>
+        </article>
+      </div>
+      <p class="more"><a href="artists.html">See full roster →</a></p>
+    </section>
+
+    <section class="section latest-news">
+      <h3>Latest</h3>
+      <ul>
+        <li><a href="news.html#release">New single released — 2026-08-01</a></li>
+        <li><a href="news.html#auditions">Auditions open</a></li>
+      </ul>
+      <p class="more"><a href="news.html">All news →</a></p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <p>Contact: <a href="mailto:contact@zeraent.com">contact@zeraent.com</a></p>
+      <p>© ZERA ENTERTAINMENT</p>
+    </div>
+  </footer>
+  <script src="assets/site.js"></script>
+</body>
+</html>
